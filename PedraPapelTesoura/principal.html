@@ -8,7 +8,8 @@
 </head>
 <body>
 
-	<input type="button" name="botEntrar" value="Entrar">
+	<input type="button" id="botEntrar" value="Entrar" onclick="entrar()">
+	<input type="button" id="botSair" value="Sair" onclick="sair()">
 
 	<table id="Placar">
 		<tr>
@@ -17,9 +18,9 @@
 		</tr>
 	</table>
 
-	<input type="button" id="botPedra" value="Pedra">
-	<input type="button" id="botPapel" value="Papel">
-	<input type="button" id="botTesoura" value="Tesoura">
+	<input type="button" id="botPedra" value="Pedra" onclick="jogar('Pedra')">
+	<input type="button" id="botPapel" value="Papel" onclick="jogar('Papel')">
+	<input type="button" id="botTesoura" value="Tesoura" onclick="jogar('Tesoura')">
 
 </body>
 </html>

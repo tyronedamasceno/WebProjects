@@ -13,6 +13,8 @@ function Dupla(jogador1, jogador2) {
 	this.jogadasJ2 = [];
 
 	this.partida = function(jogada1, jogada2) {
+		//console.log(jogada1);
+		//console.log(jogada2);
 		if (jogada1 == jogada2) {
 			this.pontosJ1++; this.pontosJ2++;
 			this.jogadasJ1.push(jogada1);
@@ -49,7 +51,7 @@ function Dupla(jogador1, jogador2) {
 			this.jogadasJ2.push(jogada2);
 			var message = `${jogada1} ganha de ${jogada2}`;
 			alert(message);
-		} else if (jogada1 == 'Tesoura' && jogada2 == 'Papel') {
+		} else if (jogada1 == 'Tesoura' && jogada2 == 'Pedra') {
 			this.pontosJ2 += 3;
 			this.jogadasJ1.push(jogada1);
 			this.jogadasJ2.push(jogada2);

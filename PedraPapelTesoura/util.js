@@ -53,6 +53,7 @@ function entrar() {
 	var dupla = new Dupla(listaJogadores[jogadorAtualIndex], computadorPlayer);
 	duplaAtualIndex = addDupla(dupla);
 	inicializaTabela();
+	showButtons();
 }
 
 function sair() {
@@ -63,6 +64,7 @@ function sair() {
 	} else {
 		alert('Nenhum jogador logado!');
 	}
+	hideButtons();
 }
 
 function jogar(jogada) {

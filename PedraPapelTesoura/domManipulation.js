@@ -39,3 +39,19 @@ function atualizaTabela() {
 	linha.insertCell().innerHTML = "<img src="+imgJ1+" class='naTabela'/>";
 	linha.insertCell().innerHTML = "<img src="+imgJ2+" class='naTabela'/>";
 }
+
+function showButtons() {
+	document.getElementById("botPedra").className = "onGame";
+	document.getElementById("botPapel").className = "onGame";
+	document.getElementById("botTesoura").className = "onGame";
+	document.getElementById("botSair").className = "onGame";
+	document.getElementById("botEntrar").className = "offGame";
+}
+
+function hideButtons() {
+	document.getElementById("botPedra").className = "offGame";
+	document.getElementById("botPapel").className = "offGame";
+	document.getElementById("botTesoura").className = "offGame";
+	document.getElementById("botSair").className = "offGame";
+	document.getElementById("botEntrar").className = "onGame";
+}

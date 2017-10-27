@@ -1,12 +1,12 @@
-#content {
-	width: 100%;
+body {
 	background-color: #ccc;
 	margin: 0 auto;
 	text-align: center;
+	font-family: sans-serif;
 }
 
 h1 {
-	font-size: 20px;	
+	font-size: 30px;	
 }
 
 table, tr, th, td {
@@ -14,12 +14,34 @@ table, tr, th, td {
 	border-collapse: collapse;
 }
 
-img.naPrincipal {
+#divBotoes {
+	width: 10%;
+	float: left;
+}
+
+#divPlacar {
+	width: 20%;
+	float: right;
+}
+
+#divMain {
+	width: 70%;	
+}
+
+.naPrincipal {
 	width: 75px;
 	height: 75px;
 }
 
-img.naTabela {
+.naTabela {
 	width: 25px;
 	height: 25px;
+}
+
+.onGame {
+	display: inline;
+}
+
+.offGame {
+	display: none;
 }

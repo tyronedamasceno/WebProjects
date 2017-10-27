@@ -9,27 +9,30 @@
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
-	<div id="content">
-
+	
 	<h1>Pedra, Papel e Tesoura</h1>
 
-	<input type="button" id="botEntrar" value="Entrar" onclick="entrar()">
-	<input type="button" id="botSair" value="Sair" onclick="sair()">
+	<div id="divBotoes">
+		<input type="button" id="botEntrar" value="Entrar" onclick="entrar()">
+		<input type="button" id="botSair" value="Sair" class="offGame" onclick="sair()">
+	</div>
 
-	<table id="Placar">
-		<tr>
-			<th id="placarJ1">A</th>
-			<th id="placarJ2">B</th>
-		</tr>
-	</table>
+	<div id="divPlacar">
+		<table id="Placar">
+			<tr>
+				<th id="placarJ1">A</th>
+				<th id="placarJ2">B</th>
+			</tr>
+		</table>
+	</div>
 
-	<img src="pedra.jpg" class="naPrincipal">
-	<input type="button" id="botPedra" value="Pedra" onclick="jogar('Pedra')">
-	<img src="papel.jpg" class="naPrincipal">
-	<input type="button" id="botPapel" value="Papel" onclick="jogar('Papel')">
-	<img src="tesoura.jpg" class="naPrincipal">
-	<input type="button" id="botTesoura" value="Tesoura" onclick="jogar('Tesoura')">
-
+	<div id="divMain">
+		<img src="pedra.jpg" class="naPrincipal">
+		<input type="button" id="botPedra" value="Pedra" class="offGame" onclick="jogar('Pedra')">
+		<img src="papel.jpg" class="naPrincipal">
+		<input type="button" id="botPapel" value="Papel" class="offGame" onclick="jogar('Papel')">
+		<img src="tesoura.jpg" class="naPrincipal">
+		<input type="button" id="botTesoura" value="Tesoura" class="offGame" onclick="jogar('Tesoura')">
 	</div>
 
 </body>

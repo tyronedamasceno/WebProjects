@@ -14,7 +14,12 @@ table, tr, th, td {
 	border-collapse: collapse;
 }
 
-img {
+img.naPrincipal {
 	width: 75px;
 	height: 75px;
+}
+
+img.naTabela {
+	width: 25px;
+	height: 25px;
 }

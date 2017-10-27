@@ -52,6 +52,7 @@ function entrar() {
 	jogadorAtualIndex = addJogador(novoJogador);
 	var dupla = new Dupla(listaJogadores[jogadorAtualIndex], computadorPlayer);
 	duplaAtualIndex = addDupla(dupla);
+	inicializaTabela();
 }
 
 function sair() {
@@ -70,6 +71,7 @@ function jogar(jogada) {
 	} else {
 		listaDuplas[duplaAtualIndex].partida(jogada, jogadaComputador());
 	}
+	atualizaTabela();
 }
 
 function jogadaComputador() {

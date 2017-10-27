@@ -4,23 +4,33 @@
 	<meta charset="utf-8">
 	<title>Pedra, Papel e Tesoura</title>
 	<script type="text/javascript" src="dominio.js"></script>
+	<script type="text/javascript" src="util.js"></script>
+	<script type="text/javascript" src="domManipulation.js"></script>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
+	<div id="content">
+
+	<h1>Pedra, Papel e Tesoura</h1>
 
 	<input type="button" id="botEntrar" value="Entrar" onclick="entrar()">
 	<input type="button" id="botSair" value="Sair" onclick="sair()">
 
 	<table id="Placar">
 		<tr>
-			<td id="placarJ1">A</td>
-			<td id="placarJ2">B</td>
+			<th id="placarJ1">A</th>
+			<th id="placarJ2">B</th>
 		</tr>
 	</table>
 
+	<img src="pedra.jpg">
 	<input type="button" id="botPedra" value="Pedra" onclick="jogar('Pedra')">
+	<img src="papel.jpg">
 	<input type="button" id="botPapel" value="Papel" onclick="jogar('Papel')">
+	<img src="pedra.jpg">
 	<input type="button" id="botTesoura" value="Tesoura" onclick="jogar('Tesoura')">
+
+	</div>
 
 </body>
 </html>

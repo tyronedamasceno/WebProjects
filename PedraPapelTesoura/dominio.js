@@ -65,7 +65,8 @@ function Dupla(jogador1, jogador2) {
 }
 
 function Jogador(nome, sexo, tipoJogador) {
-	this.nome = nome;
+	this.nome = nome.charAt(0).toUpperCase() + nome.slice(1);
+
 	if (sexo[0].toUpperCase() == 'M') this.sexo = 'Masculino';
 	else this.sexo = 'Feminino';
 	if (tipoJogador[0].toUpperCase()	 == 'H') this.tipoJogador = 'Humano';

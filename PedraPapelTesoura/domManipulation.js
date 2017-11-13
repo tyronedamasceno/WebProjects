@@ -41,19 +41,22 @@ function atualizaTabelaPlacar() {
 }
 
 function showButtons() {
-	document.getElementById("botPedra").className = "onGame";
-	document.getElementById("botPapel").className = "onGame";
-	document.getElementById("botTesoura").className = "onGame";
+	document.getElementById("divMain").className = "onGame";
 	document.getElementById("botSair").className = "onGame";
 	document.getElementById("botEntrar").className = "offGame";
+	document.getElementById("divPlacar").className = "onGame";
+	document.getElementById("divRelogio").className = "onGame";
+	document.getElementById("divWelcome").className = "onGame";
 }
 
 function hideButtons() {
-	document.getElementById("botPedra").className = "offGame";
-	document.getElementById("botPapel").className = "offGame";
-	document.getElementById("botTesoura").className = "offGame";
+	document.getElementById("divMain").className = "offGame";
 	document.getElementById("botSair").className = "offGame";
 	document.getElementById("botEntrar").className = "onGame";
+	document.getElementById("divPlacar").className = "offGame";
+	document.getElementById("divRanking").className = "onGame";
+	document.getElementById("divRelogio").className = "offGame";
+	document.getElementById("divWelcome").className = "offGame";
 }
 
 function atualizaTabelaRanking() {

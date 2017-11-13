@@ -8,16 +8,27 @@
 	<script type="text/javascript" src="domManipulation.js"></script>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
+
 <body>
-	
-	<h1>Pedra, Papel e Tesoura</h1>
 
 	<div id="divBotoes">
 		<input type="button" id="botEntrar" value="Entrar" onclick="entrar()">
 		<input type="button" id="botSair" value="Sair" class="offGame" onclick="sair()">
 	</div>
 
-	<div id="divPlacar">
+	<div id="divWelcome" class="offGame">
+		<p id="welcomeMessage"></p>
+	</div>
+	
+	<div id="divTitulo">
+		<h1>Pedra, Papel e Tesoura</h1>
+	</div>
+
+	<div id="divRelogio" class="offGame">
+		<p id="DisplayRelogio"></p>
+	</div>
+
+	<div id="divPlacar" class="offGame">
 		<table id="Placar">
 			<tr>
 				<th id="placarJ1"></th>
@@ -26,7 +37,17 @@
 		</table>
 	</div>
 
-	<div id="divRanking">
+
+	<div id="divMain" class="offGame">
+		<img src="pedra.jpg" class="naPrincipal">
+		<input type="button" id="botPedra" value="Pedra" onclick="jogar('Pedra')">
+		<img src="papel.jpg" class="naPrincipal">
+		<input type="button" id="botPapel" value="Papel" onclick="jogar('Papel')">
+		<img src="tesoura.jpg" class="naPrincipal">
+		<input type="button" id="botTesoura" value="Tesoura" onclick="jogar('Tesoura')">
+	</div>
+
+	<div id="divRanking" class="offGame">
 		<table id="Ranking">
 			<tr>
 				<th>Nome</th>
@@ -37,18 +58,6 @@
 		</table>
 	</div>
 
-	<div id="Relogio">
-		<p id="DisplayRelogio"></p>
-	</div>
-
-	<div id="divMain">
-		<img src="pedra.jpg" class="naPrincipal">
-		<input type="button" id="botPedra" value="Pedra" class="offGame" onclick="jogar('Pedra')">
-		<img src="papel.jpg" class="naPrincipal">
-		<input type="button" id="botPapel" value="Papel" class="offGame" onclick="jogar('Papel')">
-		<img src="tesoura.jpg" class="naPrincipal">
-		<input type="button" id="botTesoura" value="Tesoura" class="offGame" onclick="jogar('Tesoura')">
-	</div>
 
 </body>
 </html>

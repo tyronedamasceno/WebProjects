@@ -1,4 +1,4 @@
-function inicializaTabela() {
+function inicializaTabelaPlacar() {
 
 	var nome1 = document.getElementById("placarJ1").innerHTML = listaDuplas[duplaAtualIndex].jogador1.nome;
 	var nome2 = document.getElementById("placarJ2").innerHTML = listaDuplas[duplaAtualIndex].jogador2.nome;
@@ -23,7 +23,7 @@ function inicializaTabela() {
 	}
 }
 
-function atualizaTabela() {
+function atualizaTabelaPlacar() {
 	
 	var tabela = document.getElementById("Placar");
 
@@ -54,4 +54,23 @@ function hideButtons() {
 	document.getElementById("botTesoura").className = "offGame";
 	document.getElementById("botSair").className = "offGame";
 	document.getElementById("botEntrar").className = "onGame";
+}
+
+function atualizaTabelaRanking() {
+	var copiaListaJogadores = listaJogadores;
+	copiaListaJogadores.sort(function(j1, j2) {
+		return j2.pontuacaoTotal - j1.pontuacaoTotal;
+	});
+
+	var tabela = document.getElementById("Ranking");
+	var nCells = tabela.rows[0].cells.length - 1;
+	for (var i = 0; i < nCells; i++) {
+		tabela.rows[0].deleteCell(-1);
+		tabela.rows[1].deleteCell(-1);
+	}
+	
+	for (var i = 0; i < copiaListaJogadores.length; i++) {
+		tabela.rows[0].insertCell().innerHTML = copiaListaJogadores[i].nome;
+		tabela.rows[1].insertCell().innerHTML = copiaListaJogadores[i].pontuacaoTotal;
+	}
 }

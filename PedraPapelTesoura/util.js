@@ -52,11 +52,19 @@ function entrar() {
 	jogadorAtualIndex = addJogador(novoJogador);
 	var dupla = new Dupla(listaJogadores[jogadorAtualIndex], computadorPlayer);
 	duplaAtualIndex = addDupla(dupla);
-	inicializaTabela();
+	inicializaTabelaPlacar();
 	showButtons();
+	tempo = +new Date();
+	parado = 0;
+	atualizaTempo();
+	tempoControle = window.setInterval(atualizaTempo, 600);
 }
 
 function sair() {
+	var secs = Math.floor((+new Date() - tempo) / 1000);
+	listaJogadores[jogadorAtualIndex].tempoJogado += secs;
+	listaJogadores[jogadorAtualIndex].pontuacaoTotal = listaDuplas[duplaAtualIndex].pontosJ1;
+
 	if (jogadorAtualIndex != -1) {
 		jogadorAtualIndex = -1;
 		duplaAtualIndex = -1;
@@ -64,19 +72,30 @@ function sair() {
 	} else {
 		alert('Nenhum jogador logado!');
 	}
+
 	hideButtons();
+	atualizaTabelaRanking();
+	window.clearInterval(tempoControle);
+	parado = 1;
 }
 
 function jogar(jogada) {
 	if (jogadorAtualIndex == -1) {
 		alert('Por favor, identifique-se!\nClique em ENTRAR');
 	} else {
-		listaDuplas[duplaAtualIndex].partida(jogada, jogadaComputador());
+		listaDuplas[duplaAtualIndex].partida(jogada, listaDuplas[duplaAtualIndex].jogador2.jogadaComputador());
 	}
-	atualizaTabela();
+	atualizaTabelaPlacar();
 }
 
-function jogadaComputador() {
-	var ops = ['Pedra', 'Papel', 'Tesoura'];
-	return ops[Math.floor(Math.random()*ops.length)];
+var tempo = 0;
+var tempoControle = 0;
+var parado = 1;
+
+function atualizaTempo() {
+	if (parado) return;
+	var secs = Math.floor((+new Date() - tempo) / 1000);
+	var display = listaJogadores[jogadorAtualIndex].tempoJogado + secs;
+	document.getElementById('DisplayRelogio').innerHTML = display;
+	return;
 }

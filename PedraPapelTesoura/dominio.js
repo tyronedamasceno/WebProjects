@@ -4,6 +4,7 @@ var duplaAtualIndex = -1;
 var jogadorAtualIndex = -1;
 var computadorPlayer = new Jogador('Computador', 'Masculino', 'Computador');
 
+
 function Dupla(jogador1, jogador2) {
 	this.jogador1 = jogador1;
 	this.jogador2 = jogador2;
@@ -69,4 +70,13 @@ function Jogador(nome, sexo, tipoJogador) {
 	else this.sexo = 'Feminino';
 	if (tipoJogador[0].toUpperCase()	 == 'H') this.tipoJogador = 'Humano';
 	else this.tipoJogador = 'Computador';
+
+	this.tempoJogado = 0;
+	this.pontuacaoTotal = 0;
+
+	this.jogadaComputador = function() {
+		if (this.tipoJogador == 'Humano') return;
+		var ops = ['Pedra', 'Papel', 'Tesoura'];
+		return ops[Math.floor(Math.random()*ops.length)];
+	}
 }

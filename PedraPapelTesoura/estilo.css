@@ -1,5 +1,5 @@
 body {
-	background-color: #2d4671;
+	background-color: #3060b2;
 	margin: 0 auto;
 	text-align: center;
 	font-family: arial;
@@ -17,11 +17,11 @@ input {
 }
 
 p {
-	color: #b2c5e4;
+	color: #FFFFFF;
 }
 
 table, tr, th, td {
-	color: #b2c5e4;
+	color: #FFFFFF;
 	border: 1px solid;
 	border-collapse: collapse;
 	padding: 7px;

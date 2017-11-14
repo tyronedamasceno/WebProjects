@@ -21,7 +21,7 @@
 	</div>
 	
 	<div id="divTitulo">
-		<h1>Pedra, Papel e Tesoura</h1>
+		<h1>Pedra, Papel e Tesoura</h1>	
 	</div>
 
 	<div id="divRelogio" class="offGame">
@@ -39,15 +39,26 @@
 
 
 	<div id="divMain" class="offGame">
-		<img src="pedra.jpg" class="naPrincipal">
-		<input type="button" id="botPedra" value="Pedra" onclick="jogar('Pedra')">
-		<img src="papel.jpg" class="naPrincipal">
-		<input type="button" id="botPapel" value="Papel" onclick="jogar('Papel')">
-		<img src="tesoura.jpg" class="naPrincipal">
-		<input type="button" id="botTesoura" value="Tesoura" onclick="jogar('Tesoura')">
+		<table align="center">
+			<tr>
+				<td>
+					<div><img src="pedra.jpg" class="naPrincipal"></div>
+					<input type="button" value="Pedra" onclick="jogar('Pedra')">
+				</td>
+				<td>
+					<div><img src="papel.jpg" class="naPrincipal"></div>
+					<input type="button" value="Papel" onclick="jogar('Papel')">
+	      		</td>				
+				<td>
+					<div><img src="tesoura.jpg" class="naPrincipal"></div>
+					<input type="button" value="Tesoura" onclick="jogar('Tesoura')">
+				</td>
+	      	</tr>
+		</table>
 	</div>
 
 	<div id="divRanking" class="offGame">
+		<p>Ranking</p>
 		<table id="Ranking">
 			<tr>
 				<th>Nome</th>
@@ -57,7 +68,6 @@
 			</tr>
 		</table>
 	</div>
-
 
 </body>
 </html>

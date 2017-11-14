@@ -52,9 +52,9 @@ function entrar() {
 	jogadorAtualIndex = addJogador(novoJogador);
 
 	if (novoJogador.sexo == 'Masculino') 
-		document.getElementById("welcomeMessage").innerHTML = "Bem-vindo " + novoJogador.nome + "!!!";
+		document.getElementById("welcomeMessage").innerHTML = "Bem-vindo <strong>" + novoJogador.nome + "</strong>!!!";
 	else 
-		document.getElementById("welcomeMessage").innerHTML = "Bem-vinda " + novoJogador.nome + "!!!";
+		document.getElementById("welcomeMessage").innerHTML = "Bem-vinda <strong>" + novoJogador.nome + "</strong>!!!";
 
 	var dupla = new Dupla(listaJogadores[jogadorAtualIndex], computadorPlayer);
 	duplaAtualIndex = addDupla(dupla);
@@ -106,7 +106,7 @@ function atualizaTempo() {
 	var h = parseInt((totalTime / 3600)).toString();
 	var m = parseInt(((totalTime % 3600) / 60)).toString();
 	var s = parseInt(((totalTime % 3600) % 60)).toString();
-	var display = "Tempo jogado: " + h + "h" + m + "m" + s + "s";
+	var display = "Tempo jogado: <u>" + h + "h" + m + "m" + s + "s</u>";
 	document.getElementById('DisplayRelogio').innerHTML = display;
 	return;
 }

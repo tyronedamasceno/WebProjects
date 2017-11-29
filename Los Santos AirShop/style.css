@@ -1,0 +1,17 @@
+.header {
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background: #bcbcbc;
+    text-align: center;
+}
+
+.product {
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    height: 144px;
+    width: 256px;
+}

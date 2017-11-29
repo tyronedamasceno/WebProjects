@@ -1,0 +1,73 @@
+Informações colhidas do site gtaall.com.br
+
+Buckingham Luxor
+- Velocidade: 185km/h
+- Peso: 6400kg
+- Capacidade: 10 passageiros
+- Preço: $1625000
+
+Cargo Plane
+- Velocidade: 161km/h
+- Peso: 38000kg
+- Capacidade: 1 passageiros
+- Preço: $40000000
+
+JoBuilt Mammatus
+- Velocidade: 142km/h
+- Peso: 2000kg
+- Capacidade: 4 passageiros
+- Preço: $300000
+
+JoBuilt P-996 LAZER
+- Velocidade: 186+km/h
+- Peso: 8000kg
+- Capacidade: 1 passageiros
+- Preço: $4500000
+
+Titan
+- Velocidade: 160km/h
+- Peso: 38000kg
+- Capacidade: 10 passageiros
+- Preço: $2000000
+
+Western Cuban 800
+- Velocidade: 158km/h
+- Peso: 5000kg
+- Capacidade: 2 passageiros
+- Preço: $240000
+
+Western Duster
+- Velocidade: 142km/h
+- Peso: 2000kg
+- Capacidade: 2 passageiros
+- Preço: $275000
+
+Western Mallard
+- Velocidade: 161km/h
+- Peso: 2000kg
+- Capacidade: 1 passageiros
+- Preço: $250000
+
+Buckingham Vestra
+- Velocidade: 186+km/h
+- Peso: 5000kg
+- Capacidade: 2 passageiros
+- Preço: $950000
+
+Buckingham Miljet
+- Velocidade: 185km/h
+- Peso: 6400kg
+- Capacidade: 16 passageiros
+- Preço: $1700000
+
+Mammoth Hydra
+- Velocidade: 186+km/h
+- Peso: 8000kg
+- Capacidade: 1 passageiros
+- Preço: $3000000
+
+JoBuilt Velum
+- Velocidade: 152km/h
+- Peso: 5000kg
+- Capacidade: 4 passageiros
+- Preço: $450000

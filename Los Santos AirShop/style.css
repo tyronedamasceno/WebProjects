@@ -1,3 +1,8 @@
+@@font-face {
+    font-family: "pricedown";
+    src: url('pricedonw.ttf') format("truetype");
+}
+
 .header {
     padding: 30px;
     margin-bottom: 10px;
@@ -5,6 +10,7 @@
     background: #bcbcbc;
     text-align: center;
     height: 100px;
+    font-family: pricedown;
 }
 
 .product {

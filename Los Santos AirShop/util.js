@@ -2,11 +2,12 @@ function entrar() {
     var nome = document.getElementById("inputName").value;
     if (nome == "" || nome == null) return;
 
-    var index = findCarrinho(nome);
-    if (index == -1) {
-        index = listaCarrinhos.push(new Carrinho(nome));
+    indexCarrinhoAtual = findCarrinho(nome);
+    if (indexCarrinhoAtual == -1) {
+        indexCarrinhoAtual = listaCarrinhos.push(new Carrinho(nome)) - 1;
     }
-    indexCarrinhoAtual = index;
+
+    document.getElementById("inputName").value = "";
 }
 
 function sair() {

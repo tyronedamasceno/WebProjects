@@ -21,3 +21,14 @@ function findCarrinho(nomeDono) {
     }
     return -1;
 }
+
+function showDesc(id) {
+    id = "desc" + id;
+    var desc = document.getElementById(id);
+    document.getElementById(id).className = "description-show";
+}
+
+function hideDesc(id) {
+    id = "desc" + id;
+    document.getElementById(id).className = "description-hide";
+}

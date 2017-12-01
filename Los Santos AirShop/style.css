@@ -29,3 +29,25 @@ img {
     height: 144px;
     width: 256px;
 }
+
+img:hover {
+    opacity: 0.3;
+}
+
+.description-show {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 55px;
+    margin-right: 55px;
+    display: block;
+}
+
+.description-hide {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 55px;
+    margin-right: 55px;
+    display: none;
+}

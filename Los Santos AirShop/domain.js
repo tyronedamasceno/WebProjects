@@ -1,6 +1,6 @@
 var listaProdutos = [];
-var listaUsuarios = [];
-
+var listaCarrinhos = [];
+var indexCarrinhoAtual = -1;
 function Produto(nome, descricao, preco, peso, velocidade, capacidade) {
     this.nome = nome;
     this.descricao = descricao;

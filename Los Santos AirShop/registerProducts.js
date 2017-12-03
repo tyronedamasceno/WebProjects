@@ -1,3 +1,8 @@
+/*
+Autor: Tyrone Damasceno
+2016044500
+*/
+
 listaProdutos.push(new Produto(
     "Buckingham Luxor", "Protótipos de Buckingham, em Luxor, no mundo real, são Cessna Citation 560/650, Soberano e de Learjet 45.",
     1625000, 6400, 185, 10

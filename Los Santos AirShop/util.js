@@ -1,3 +1,8 @@
+/*
+Autor: Tyrone Damasceno
+2016044500
+*/
+
 function entrar() {
     var nome = document.getElementById("inputName").value;
     if (nome == "" || nome == null) return;

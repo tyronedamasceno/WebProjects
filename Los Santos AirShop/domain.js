@@ -1,3 +1,8 @@
+/*
+Autor: Tyrone Damasceno
+2016044500
+*/
+
 var listaProdutos = [];
 var listaCarrinhos = [];
 var indexCarrinhoAtual = -1;

@@ -22,6 +22,15 @@ function findCarrinho(nomeDono) {
     return -1;
 }
 
+function comprar(idProduto) {
+    if (indexCarrinhoAtual == -1) {
+        alert("Por favor, antes de comprar, identifique-se");
+    } else {
+        listaCarrinhos[indexCarrinhoAtual].addProduto(idProduto);
+        alert("Produto adicionado ao carrinho com sucesso!");
+    }
+}
+
 function showDesc(id) {
     id = "desc" + id;
     var desc = document.getElementById(id);

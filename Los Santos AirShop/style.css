@@ -38,20 +38,18 @@ img:hover {
     opacity: 0.3;
 }
 
-.description-show {
+p {
     font-family: Arial;
     font-size: 12px;
     font-weight: bold;
     margin-left: 55px;
     margin-right: 55px;
+}
+
+.show {
     display: block;
 }
 
-.description-hide {
-    font-family: Arial;
-    font-size: 12px;
-    font-weight: bold;
-    margin-left: 55px;
-    margin-right: 55px;
+.hide {
     display: none;
 }

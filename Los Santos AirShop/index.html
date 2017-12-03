@@ -18,19 +18,23 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-6 header">
+                <div class="col-md-5 header">
                     <h1>Los Santos AirShop</h1>
                 </div>
-                <div class="col-md-2 header">
+                <div class="col-md-3 header">
+                    <p id="welcomeMessage"></p>
                     <span class="glyphicon glyphicon-shopping-cart"></span>
                 </div>
                 <div class="col-md-4 header">
-                    <form class="form-inline">
+                    <form class="form-inline show" id="loginBtn">
                         <div class="form-group">
                             <label class="sr-only" for="inputName">Nome</label>
                             <input type="name" class="form-control" id="inputName" placeholder="Nome">
                         </div>
                         <input type="button" value="Entrar" class="btn btn-primary" onclick="entrar()"></button>
+                    </form>
+                    <form class="form-inline hide" id="logoutBtn">
+                        <input type="button" value="Sair" class="btn btn-primary" onclick="sair()"></button>
                     </form>
                 </div>
             </div>

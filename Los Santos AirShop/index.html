@@ -28,13 +28,15 @@ Autor: Tyrone Damasceno
                 </div>
                 <div class="col-md-3 header">
                     <p id="welcomeMessage"></p>
-                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                    <span class="glyphicon glyphicon-shopping-cart"></span><br />
+                    <input type="button" value="Calcular Total" class="btn btn-primary hide" id="openResumoBtn" onclick="abrirResumo()"></button>
+                    <input type="button" value="Fechar Resumo" class="btn btn-primary hide" id="closeResumoBtn" onclick="fecharResumo()"></button>
                 </div>
                 <div class="col-md-4 header">
                     <form class="form-inline show" id="loginBtn">
                         <div class="form-group">
                             <label class="sr-only" for="inputName">Nome</label>
-                            <input type="name" class="form-control" id="inputName" placeholder="Nome">
+                            <input type="text" class="form-control" id="inputName" placeholder="Nome">
                         </div>
                         <input type="button" value="Entrar" class="btn btn-primary" onclick="entrar()"></button>
                     </form>
@@ -42,6 +44,24 @@ Autor: Tyrone Damasceno
                         <input type="button" value="Sair" class="btn btn-primary" onclick="sair()"></button>
                     </form>
                 </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <table class="table table-striped table-hover table-responsive" id="tabelaResumo">
+                        
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Valor unitário</th>
+                            <th>Peso total</th>
+                            <th>Valor total do item</th>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="col-md-2"></div>
             </div>
 
             <div class="row">

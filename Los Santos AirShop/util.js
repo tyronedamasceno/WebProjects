@@ -16,6 +16,7 @@ function entrar() {
 
     document.getElementById("loginBtn").className = "form-inline hide";
     document.getElementById("logoutBtn").className = "form-inline show";
+    document.getElementById("openResumoBtn").className = "btn btn-primary show";
 }
 
 function sair() {
@@ -23,6 +24,8 @@ function sair() {
     document.getElementById("welcomeMessage").innerHTML = "";
     document.getElementById("loginBtn").className = "form-inline show";
     document.getElementById("logoutBtn").className = "form-inline hide";
+    document.getElementById("openResumoBtn").className = "btn btn-primary hide";
+    document.getElementById("closeResumoBtn").className = "btn btn-primary hide";
 }
 
 function findCarrinho(nomeDono) {
@@ -51,4 +54,31 @@ function showDesc(id) {
 function hideDesc(id) {
     id = "desc" + id;
     document.getElementById(id).className = "description hide";
+}
+
+function abrirResumo() {
+    document.getElementById("openResumoBtn").className = "btn btn-primary hide";
+    document.getElementById("closeResumoBtn").className = "btn btn-primary show";
+
+    var tabela = document.getElementById("tabelaResumo");
+    while (tabela.rows.length > 1) {
+		tabela.deleteRow(1);
+	}
+
+    var resumo = listaCarrinhos[indexCarrinhoAtual].calcularTotal();
+    var discriminacao = resumo[0];
+    var valorTotal = resumo[1];
+
+    for (var i = 0; i < discriminacao.length; i++) {
+        var linha = tabela.insertRow();
+        for (var j = 0; j < discriminacao[i].length; j++) {
+            linha.insertCell().innerHTML = discriminacao[i][j];
+        }
+    }
+
+}
+
+function fecharResumo() {
+    document.getElementById("openResumoBtn").className = "btn btn-primary show";
+    document.getElementById("closeResumoBtn").className = "btn btn-primary hide";
 }

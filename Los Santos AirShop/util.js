@@ -21,6 +21,7 @@ function entrar() {
 
 function sair() {
     indexCarrinhoAtual = -1;
+    fecharResumo();
     document.getElementById("welcomeMessage").innerHTML = "";
     document.getElementById("loginBtn").className = "form-inline show";
     document.getElementById("logoutBtn").className = "form-inline hide";
@@ -59,6 +60,7 @@ function hideDesc(id) {
 function abrirResumo() {
     document.getElementById("openResumoBtn").className = "btn btn-primary hide";
     document.getElementById("closeResumoBtn").className = "btn btn-primary show";
+    document.getElementById("divResumo").className = "row show";
 
     var tabela = document.getElementById("tabelaResumo");
     while (tabela.rows.length > 1) {
@@ -76,9 +78,17 @@ function abrirResumo() {
         }
     }
 
+    var ultimaLinha = tabela.insertRow();
+    ultimaLinha.insertCell().innerHTML = "<b>Valor total</b>"
+    ultimaLinha.insertCell().innerHTML = "---";
+    ultimaLinha.insertCell().innerHTML = "---";
+    ultimaLinha.insertCell().innerHTML = "---";
+    ultimaLinha.insertCell().innerHTML = "<b>US$ "+valorTotal+"</b>"
+
 }
 
 function fecharResumo() {
     document.getElementById("openResumoBtn").className = "btn btn-primary show";
     document.getElementById("closeResumoBtn").className = "btn btn-primary hide";
+    document.getElementById("divResumo").className = "row hide";
 }

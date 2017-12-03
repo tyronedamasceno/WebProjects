@@ -21,18 +21,23 @@ Autor: Tyrone Damasceno
 
     <body>
 
+    <!--
+        A página foi construída responsiva para dispositivos com tela de
+        até 768px (smartphones) e desktops médios com telas maiores 992px
+    -->
+
         <div class="container">
             <div class="row">
-                <div class="col-md-5 header">
+                <div class="col-xs-5 col-md-5 header">
                     <h1>Los Santos AirShop</h1>
                 </div>
-                <div class="col-md-3 header">
+                <div class="col-xs-3 col-md-3 header">
                     <p id="welcomeMessage"></p>
                     <span class="glyphicon glyphicon-shopping-cart"></span><br />
                     <input type="button" value="Calcular Total" class="btn btn-primary hide" id="openResumoBtn" onclick="abrirResumo()"></button>
                     <input type="button" value="Fechar Resumo" class="btn btn-primary hide" id="closeResumoBtn" onclick="fecharResumo()"></button>
                 </div>
-                <div class="col-md-4 header">
+                <div class="col-xs-4 col-md-4 header">
                     <form class="form-inline show" id="loginBtn">
                         <div class="form-group">
                             <label class="sr-only" for="inputName">Nome</label>
@@ -46,46 +51,44 @@ Autor: Tyrone Damasceno
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
+            <div class="row hide" id="divResumo">
+                <div class="col-xs-2 col-md-2"></div>
+                <div class="col-xs-8 col-md-8">
                     <table class="table table-striped table-hover table-responsive" id="tabelaResumo">
-                        
                         <tr>
                             <th>Produto</th>
                             <th>Quantidade</th>
-                            <th>Valor unitário</th>
-                            <th>Peso total</th>
-                            <th>Valor total do item</th>
+                            <th>Valor unitário (US$)</th>
+                            <th>Peso total (Kg)</th>
+                            <th>Valor total do item (US$)</th>
                         </tr>
-
                     </table>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="col-xs-2 col-md-2"></div>
             </div>
 
             <div class="row">
-                <div class="col-md-4 product" id="item1"></div>
-                <div class="col-md-4 product" id="item2"></div>
-                <div class="col-md-4 product" id="item3"></div>
+                <div class="col-xs-4 col-md-4 product" id="item1"></div>
+                <div class="col-xs-4 col-md-4 product" id="item2"></div>
+                <div class="col-xs-4 col-md-4 product" id="item3"></div>
             </div>
 
             <div class="row">
-                <div class="col-md-4 product" id="item4"></div>
-                <div class="col-md-4 product" id="item5"></div>
-                <div class="col-md-4 product" id="item6"></div>
+                <div class="col-xs-4 col-md-4 product" id="item4"></div>
+                <div class="col-xs-4 col-md-4 product" id="item5"></div>
+                <div class="col-xs-4 col-md-4 product" id="item6"></div>
             </div>
 
             <div class="row">
-                <div class="col-md-4 product" id="item7"></div>
-                <div class="col-md-4 product" id="item8"></div>
-                <div class="col-md-4 product" id="item9"></div>
+                <div class="col-xs-4 col-md-4 product" id="item7"></div>
+                <div class="col-xs-4 col-md-4 product" id="item8"></div>
+                <div class="col-xs-4 col-md-4 product" id="item9"></div>
             </div>
 
             <div class="row">
-                <div class="col-md-4 product" id="item10"></div>
-                <div class="col-md-4 product" id="item11"></div>
-                <div class="col-md-4 product" id="item12"></div>
+                <div class="col-xs-4 col-md-4 product" id="item10"></div>
+                <div class="col-xs-4 col-md-4 product" id="item11"></div>
+                <div class="col-xs-4 col-md-4 product" id="item12"></div>
             </div>
 
         </div>

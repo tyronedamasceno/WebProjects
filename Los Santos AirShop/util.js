@@ -74,7 +74,10 @@ function abrirResumo() {
     for (var i = 0; i < discriminacao.length; i++) {
         var linha = tabela.insertRow();
         for (var j = 0; j < discriminacao[i].length; j++) {
-            linha.insertCell().innerHTML = discriminacao[i][j];
+            if (j < 4)
+                linha.insertCell().innerHTML = discriminacao[i][j];
+            else
+                linha.insertCell().innerHTML = maskMoney(discriminacao[i][j]);
         }
     }
 
@@ -83,7 +86,7 @@ function abrirResumo() {
     ultimaLinha.insertCell().innerHTML = "---";
     ultimaLinha.insertCell().innerHTML = "---";
     ultimaLinha.insertCell().innerHTML = "---";
-    ultimaLinha.insertCell().innerHTML = "<b>US$ "+valorTotal+"</b>"
+    ultimaLinha.insertCell().innerHTML = "<b>US$ "+maskMoney(valorTotal)+"</b>"
 
 }
 
@@ -91,4 +94,13 @@ function fecharResumo() {
     document.getElementById("openResumoBtn").className = "btn btn-primary show";
     document.getElementById("closeResumoBtn").className = "btn btn-primary hide";
     document.getElementById("divResumo").className = "row hide";
+}
+
+function maskMoney(input) {
+    var output = "" + input;
+    output = output.split("").reverse();
+    for (var i = 3; i < output.length; i += 4) {
+        output.splice(i, 0, ".");
+    }
+    return output.reverse().join("");
 }
